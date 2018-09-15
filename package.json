@@ -1,0 +1,36 @@
+{
+  "name": "jonathanbell.ca",
+  "description": "The online photography portfolio of Jonathan Bell",
+  "version": "1.0.0",
+  "author": "Jonathan Bell <jonathanbell.ca+github@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-image": "^1.0.55",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-accessibilityjs": "^1.0.3",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-html-attributes": "^1.0.5",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-source-s3": "0.0.0",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "normalize.css": "^8.0.0",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "Jonathan Bell",
+    "photography",
+    "portfolio"
+  ],
+  "license": "WTFPL",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathanbell/jonathanbell.ca"
+  }
+}
