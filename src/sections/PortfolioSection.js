@@ -17,7 +17,11 @@ export default class PortfolioSection extends Component {
         {data.images.edges.map(({ node }) => {
           if (node.file) {
             return (
-              <div key={node.id} className="portfolio-image">
+              <div
+                key={node.id.replace(/[^A-Z0-9]/gi, '-')}
+                id={node.id.replace(/[^A-Z0-9]/gi, '-')}
+                className="portfolio-image"
+              >
                 <Img
                   alt={`Photography by ${data.site.siteMetadata.title}`}
                   sizes={node.file.image.sizes}
@@ -55,7 +59,7 @@ export const query = graphql`
           file: localFile {
             image: childImageSharp {
               sizes(maxWidth: 1100, quality: 97) {
-                ...GatsbyImageSharpSizes
+                ...GatsbyImageSharpSizes_withWebp_noBase64
               }
             }
           }

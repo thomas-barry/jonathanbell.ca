@@ -31,7 +31,7 @@ export const query = graphql`
           file: localFile {
             image: childImageSharp {
               sizes(maxWidth: 813, quality: 95) {
-                ...GatsbyImageSharpSizes
+                ...GatsbyImageSharpSizes_withWebp_noBase64
               }
             }
           }

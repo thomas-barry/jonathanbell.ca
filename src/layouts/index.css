@@ -175,7 +175,6 @@ article {
 @media only screen and (min-width: 50rem) {
   .masthead {
     width: var(--wide-nav-width);
-    background: rgba(255, 255, 255, 0.697);
     position: fixed;
     height: 100vh;
   }
@@ -206,11 +205,11 @@ article {
     align-items: center;
   }
 
-  .portfolio-image:nth-child(5n) {
+  .portfolio-image:nth-child(9n) {
     grid-column: 1 / 3;
   }
 
-  .portfolio-image:nth-child(9n),
+  .portfolio-image:nth-child(11n),
   .portfolio-image:last-of-type {
     grid-column: 2 / -1;
   }
